@@ -103,7 +103,7 @@
   .hero__title { font-size: clamp(2.6rem, 1.2rem + 3.3vw, 5.2rem); line-height: .98; text-wrap: pretty; }
   .hero__lede { max-width: 40ch; color: var(--v-ink); }
   .hero__cta { margin-top: var(--v-3); display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); }
-  .hero__hint { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 30ch; }
+  .hero__hint { font-size: var(--v-t-sm); color: var(--v-ink); max-width: 30ch; text-shadow: 0 1px 10px rgb(244 243 239 / .95), 0 0 2px rgb(244 243 239 / .9); }
   @media (max-width: 860px) {
     /* полоса «было» те же 42% слева, оффер внизу на светлой полосе на всю ширину */
     .hero .hero__before .hero__was { bottom: auto; top: clamp(1.2rem, 4svh, 2.4rem); max-width: 12ch; font-size: var(--v-t-xs);
@@ -273,11 +273,11 @@
     <section class="hero" id="hero" data-v-act="pin" data-v-span="2.2" aria-label="Ремонт квартир по графику">
       <div data-v-stage>
         <div class="hero__after">
-          <img src="assets/room-after.webp" srcset="assets/room-after-800.webp 800w, assets/room-after-1200.webp 1200w, assets/room-after.webp 1920w" sizes="100vw" alt="Комната после ремонта: светлые стены, паркет, чистое окно" width="1920" height="1067" fetchpriority="high">
+          <img src="assets/room-after.webp" srcset="assets/room-after-800.webp 800w, assets/room-after-1200.webp 1200w, assets/room-after.webp 1920w" sizes="100vw" alt="Гостиная после ремонта: современная отделка, паркет, панорамное окно" width="1920" height="1067" fetchpriority="high">
         </div>
         <div class="hero__before dark" data-v-in data-v-in-self>
-          <img src="assets/room-before.webp" srcset="assets/room-before-800.webp 800w, assets/room-before-1200.webp 1200w, assets/room-before.webp 1920w" sizes="100vw" alt="Та же комната до ремонта: бетонные стены, провода, стремянка у окна" width="1920" height="1067" decoding="async">
-          <p class="hero__was">Было: бетон, провода, пыль</p>
+          <img src="assets/room-before.webp" srcset="assets/room-before-800.webp 800w, assets/room-before-1200.webp 1200w, assets/room-before.webp 1920w" sizes="100vw" alt="Комната до ремонта: старая отделка, мебель и вещи" width="1920" height="1067" decoding="async">
+          <p class="hero__was">Было: старый ремонт и вещи</p>
         </div>
         <div class="hero__scrim v-scrim v-scrim--light" aria-hidden="true"></div>
         <div class="hero__offer" data-v-cue="0 1 0 0" data-v-rise="0">
@@ -301,8 +301,8 @@
           <h2 class="v-display v-display--md">Прораб пропал на третьей неделе</h2>
           <p class="v-body">Телефон не отвечает, рабочие приходят через день. Что сделано и что дальше, непонятно. Приходится ездить самому и разбираться на месте.</p>
           <figure class="pair__fig pair__fig--tall" data-v-reveal="up" data-v-reveal-at="0.18 0.48">
-            <img src="assets/hall-before.webp" srcset="assets/hall-before-800.webp 800w, assets/hall-before.webp 1200w" sizes="(max-width: 860px) 100vw, 34rem" alt="Коридор новостройки до начала работ: бетон, провода, мешок смеси" width="1200" height="1589" loading="lazy" decoding="async">
-            <figcaption>Коридор до начала работ</figcaption>
+            <img src="assets/hall-before.webp" srcset="assets/hall-before-800.webp 800w, assets/hall-before.webp 1200w" sizes="(max-width: 860px) 100vw, 34rem" alt="Комната в разгар работ: очищенные стены, мешки с мусором" width="1200" height="1589" loading="lazy" decoding="async">
+            <figcaption>Комната в разгар работ</figcaption>
           </figure>
         </div>
       </div>
@@ -312,8 +312,8 @@
           <h2 class="v-display v-display--md">График по неделям и фотоотчёт каждые 7 дней</h2>
           <p class="v-body">Перед стартом вы получаете план работ по неделям. Раз в 7 дней приходят фото с площадки и короткий отчёт: что сделано, что дальше. Приезжать не нужно, но всегда можно.</p>
           <figure class="pair__fig pair__fig--tall" data-v-reveal="up" data-v-reveal-at="0.22 0.52">
-            <img src="assets/hall-after.webp" srcset="assets/hall-after-800.webp 800w, assets/hall-after.webp 1200w" sizes="(max-width: 860px) 100vw, 34rem" alt="Тот же коридор после чистовой отделки: белые стены, паркет, дверные коробки" width="1200" height="1589" loading="lazy" decoding="async">
-            <figcaption>Тот же коридор после чистовой отделки</figcaption>
+            <img src="assets/hall-after.webp" srcset="assets/hall-after-800.webp 800w, assets/hall-after.webp 1200w" sizes="(max-width: 860px) 100vw, 34rem" alt="Гостиная после чистовой отделки: светлые стены, паркет, дизайнерский свет" width="1200" height="1589" loading="lazy" decoding="async">
+            <figcaption>Гостиная после чистовой отделки</figcaption>
           </figure>
         </div>
       </div>
@@ -376,11 +376,11 @@
     <section class="pair pair--sticky prices" id="ceny" data-v-act="flow" aria-label="Виды работ, цены и сроки">
       <div class="pair__side pair__side--before dark">
         <div class="prices__photo">
-          <img src="assets/kitchen-before.webp" srcset="assets/kitchen-before-800.webp 800w, assets/kitchen-before.webp 1200w" sizes="(max-width: 860px) 100vw, 50vw" alt="Кухня от застройщика: бетон, выводы воды и провод под вытяжку" width="1200" height="1589" loading="lazy" decoding="async">
+          <img src="assets/kitchen-before.webp" srcset="assets/kitchen-before-800.webp 800w, assets/kitchen-before.webp 1200w" sizes="(max-width: 860px) 100vw, 50vw" alt="Демонтаж: завалы мусора, очищенные дверные проёмы" width="1200" height="1589" loading="lazy" decoding="async">
           <div class="prices__scrim" aria-hidden="true"></div>
           <div class="prices__copy" data-v-in data-v-stagger="70">
-            <h2 class="v-display v-display--md">Было: кухня от застройщика</h2>
-            <p class="v-body">Стяжка, выводы воды и один провод под вытяжку. Отсюда и считаем.</p>
+            <h2 class="v-display v-display--md">Было: демонтаж и черновые</h2>
+            <p class="v-body">Снос перегородок, мусор, выводы коммуникаций. Отсюда и считаем.</p>
           </div>
         </div>
       </div>
@@ -401,10 +401,6 @@
           </div>
           <p class="pair__note"><b>Осмотр и смета бесплатно</b>, готовим после осмотра квартиры. Гарантия на работы 2 года.</p>
           <a class="v-btn v-btn--ghost" href="#raschet">Рассчитать ремонт</a>
-          <figure class="pair__fig pair__fig--tall">
-            <img src="assets/kitchen-tall.webp" srcset="assets/kitchen-tall-800.webp 800w, assets/kitchen-tall.webp 1200w" sizes="(max-width: 860px) 100vw, 34rem" alt="Та же кухня после чистовой отделки: серые фасады, деревянная столешница, паркет" width="1200" height="1589" loading="lazy" decoding="async">
-            <figcaption>Та же кухня после чистовой отделки</figcaption>
-          </figure>
         </div>
       </div>
     </section>
@@ -416,7 +412,7 @@
           <div class="fin__img"><img src="assets/room-before.webp" srcset="assets/room-before-800.webp 800w, assets/room-before-1200.webp 1200w, assets/room-before.webp 1920w" sizes="100vw" alt="" width="1920" height="1067" loading="lazy" decoding="async"></div>
           <div class="fin__scrim" aria-hidden="true"></div>
           <div class="fin__copy" data-v-cue="0 0.4 0 0.28">
-            <h2 class="v-display v-display--md">Было: бетон, провода, пыль</h2>
+            <h2 class="v-display v-display--md">Было: старый ремонт и вещи</h2>
             <p class="v-lede">Осталось здесь.</p>
           </div>
         </div>
