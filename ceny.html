@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- Демо-заглушка раздела «Цены». Заменяется боевой страницей после согласования структуры. -->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Цены · МастерОвой</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<style>
+  :root { --canvas:#f4f3ef; --ink:#1a1c20; --soft:#6f727a; --accent:#2b4fd7; --dark:#2a2c31; }
+  * { margin: 0; box-sizing: border-box; }
+  body { min-height: 100svh; display: grid; place-items: center; background: var(--canvas); color: var(--ink);
+         font-family: "Golos Text", "Segoe UI", system-ui, sans-serif; }
+  .wrap { max-width: 34rem; padding: 2rem 1.5rem; text-align: center; display: flex; flex-direction: column; gap: 1.1rem; align-items: center; }
+  .brand { font-family: "Wix Madefor Display", "Segoe UI", system-ui, sans-serif; font-weight: 700; font-size: 1.9rem; letter-spacing: -.02em; }
+  .tag { font-size: .8rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+  p { color: var(--soft); line-height: 1.55; }
+  nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem 1.2rem; margin-top: .6rem; }
+  nav a { color: var(--ink); text-decoration: none; font-weight: 500; border-bottom: 1px solid transparent; }
+  nav a:hover { color: var(--accent); border-color: var(--accent); }
+  .home { display: inline-block; margin-top: .8rem; padding: .8rem 1.6rem; border-radius: 8px; background: var(--accent); color: #f7f8ff; text-decoration: none; font-weight: 600; }
+  .demo-note { font-size: .8rem; color: var(--soft); }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="tag">Демо-версия</p>
+    <h1 class="brand">Цены</h1>
+    <p>Здесь будет прайс по видам ремонта и примеры смет: косметический, чистовой, черновой, капитальный. Точные суммы фиксируются после осмотра квартиры и попадут в этот раздел.</p>
+    <nav aria-label="Разделы сайта">
+      <a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="portfolio.html">Объекты</a><a href="kontakty.html">Контакты</a>
+    </nav>
+    <a class="home" href="index.html">На главную</a>
+    <p class="demo-note">МастерОвой · Екатеринбург · страница-заглушка</p>
+  </main>
+</body>
+</html>
